@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Booking xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Booking.xsd">
+    <OperatorID>4</OperatorID>
+    <BookingDate>2012-12-11</BookingDate>
+    <BookingTime>19:22:00</BookingTime>
+    <PickUpAddress>
+        <Street>Roman Street</Street>
+        <HouseNo>75</HouseNo>
+        <PostCode>W41 LU</PostCode>
+		<City>London</City>
+    </PickUpAddress>
+    <DestinationAddress>
+        <Street>Amber Trace Street</Street>
+        <HouseNo>56</HouseNo>
+        <PostCode>W13 9RR</PostCode>
+		<City>London</City>
+    </DestinationAddress>
+	<EstimatedTime>30</EstimatedTime>
+    <Name>Thomas</Name>
+    <PhoneNumber>07555451275</PhoneNumber>
+    <Status>NOT COMPLETE</Status>
+    <BookingInfo Type="Regular">
+        <RegularBooking>
+            <ClientID>4</ClientID>
+            <RepeatOn>
+			    <DriverID>13</DriverID>
+                <WeekDay>SATURDAY</WeekDay>
+                <WeeklyInterval>4</WeeklyInterval>
+                <PickUpTime>16:10:00</PickUpTime>
+                <PickUpDate>2012-12-15</PickUpDate>
+                <RegStatus>ONGOING</RegStatus>
+				<TimesComplete>5</TimesComplete>
+            </RepeatOn>
+        </RegularBooking>
+    </BookingInfo>
+</Booking>

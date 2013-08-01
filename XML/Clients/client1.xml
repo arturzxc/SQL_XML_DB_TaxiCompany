@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Client xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Client.xsd">
+    <CompanyName>Maddison Engineering</CompanyName>
+    <ClientType>Private</ClientType>
+    <Discount>2.5</Discount>
+    <Street>Manchester Street</Street>
+    <HouseNo>54</HouseNo>
+    <PostCode>W1K 4JU</PostCode>
+	<City>London</City>
+</Client>

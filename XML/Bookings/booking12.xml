@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Booking xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Booking.xsd">
+    <OperatorID>6</OperatorID>
+    <BookingDate>2012-12-12</BookingDate>
+    <BookingTime>23:22:00</BookingTime>
+    <PickUpAddress>
+        <Street>Lone Castle Road</Street>
+        <HouseNo>65</HouseNo>
+        <PostCode>W41 BH</PostCode>
+		<City>London</City>
+    </PickUpAddress>
+    <DestinationAddress>
+        <Street>Anadel Road</Street>
+        <HouseNo>46</HouseNo>
+        <PostCode>W42RA</PostCode>
+		<City>London</City>
+    </DestinationAddress>
+	<EstimatedTime>30</EstimatedTime>
+    <Name>Nickolson</Name>
+    <PhoneNumber>07553251275</PhoneNumber>
+    <Status>COMPLETE</Status>
+    <BookingInfo Type="Normal">
+        <NormalBooking>
+		    <DriverID>12</DriverID>
+			<ClientID>7</ClientID>
+			<PickUpDate>2012-12-09</PickUpDate>
+    		<PickUpTime>08:00:00</PickUpTime>
+	  </NormalBooking>
+    </BookingInfo>
+</Booking>

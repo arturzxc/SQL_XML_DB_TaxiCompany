@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Client xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Client.xsd">
+    <CompanyName>Tall Cow Devs</CompanyName>
+    <ClientType>Corporate</ClientType>
+    <Discount>10</Discount>
+    <Street>Orange Snake Road</Street>
+    <HouseNo>53</HouseNo>
+    <PostCode>W14 0ZN</PostCode>
+	<City>London</City>
+</Client>

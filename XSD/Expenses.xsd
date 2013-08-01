@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    
+    <xs:element name="Expense">
+        <xs:complexType>
+            <xs:sequence>           
+                <xs:element name="CostName">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="30"></xs:maxLength>                        
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="CostValue">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">                                                
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="CostDate" type="xs:date" />
+                <xs:element name="AdditionalInfo">
+                    <xs:complexType>
+                        <xs:choice>                        
+                            <xs:group ref="CarMaintenance"></xs:group>                                            
+                            <xs:element ref="ExpenseType"></xs:element>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="ExpenseType">
+        <xs:simpleType>
+           <xs:restriction base="xs:string">
+                   <xs:maxLength value="20"></xs:maxLength>                
+                   <xs:enumeration value="Wage"/>
+                   <xs:enumeration value="Utilities"/>
+                   <xs:enumeration value="Other"/>
+           </xs:restriction>
+        </xs:simpleType>
+    </xs:element>         
+    
+    <xs:group name="CarMaintenance">                
+        <xs:sequence>
+            <xs:element name="CarRegNo">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:length value="7"></xs:length>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="DriverContribution">
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal"></xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="ContribReceived" default="Outstanding">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="12"></xs:maxLength>
+                        <xs:enumeration value="Outstanding"></xs:enumeration>
+                        <xs:enumeration value="Paid"></xs:enumeration>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    
+</xs:schema>

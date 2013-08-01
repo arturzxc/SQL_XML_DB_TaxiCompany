@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Client xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Client.xsd">
+    <CompanyName>The Content Panda Company</CompanyName>
+    <ClientType>Private</ClientType>
+    <Discount>3.3</Discount>
+    <Street>Sleepy Point Street</Street>
+    <HouseNo>43</HouseNo>
+    <PostCode>W36 JH</PostCode>
+	<City>London</City>
+</Client>

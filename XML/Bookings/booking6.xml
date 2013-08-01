@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Booking xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Booking.xsd">
+    <OperatorID>3</OperatorID>
+    <BookingDate>2012-12-11</BookingDate>
+    <BookingTime>14:20:00</BookingTime>
+    <PickUpAddress>
+        <Street>Shady River Street</Street>
+        <HouseNo>4</HouseNo>
+        <PostCode>W1H 1DN</PostCode>
+		<City>London</City>
+    </PickUpAddress>
+    <DestinationAddress>
+        <Street>Lone Castle Road</Street>
+        <HouseNo>65</HouseNo>
+        <PostCode>W41 BH</PostCode>
+		<City>London</City>
+    </DestinationAddress>
+	<EstimatedTime>10</EstimatedTime>
+    <Name>Zan</Name>
+    <PhoneNumber>07555451295</PhoneNumber>
+    <Status>NOT COMPLETE</Status>
+    <BookingInfo Type="Regular">
+        <RegularBooking>
+            <ClientID>1</ClientID>
+            <RepeatOn>
+			    <DriverID>15</DriverID>
+                <WeekDay>MONDAY</WeekDay>
+                <WeeklyInterval>3</WeeklyInterval>
+                <PickUpTime>14:50:00</PickUpTime>
+                <PickUpDate>2012-12-10</PickUpDate>
+                <RegStatus>CANCELLED</RegStatus>
+				<TimesComplete>3</TimesComplete>
+            </RepeatOn>
+        </RegularBooking>
+    </BookingInfo>
+</Booking>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Booking xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Booking.xsd">
+    <OperatorID>3</OperatorID>
+    <BookingDate>2012-12-11</BookingDate>
+    <BookingTime>15:10:00</BookingTime>
+    <PickUpAddress>
+        <Street>Windy Swan Street</Street>
+        <HouseNo>89</HouseNo>
+        <PostCode>W1H 6HP</PostCode>
+		<City>London</City>
+    </PickUpAddress>
+    <DestinationAddress>
+        <Street>Big Vale Street</Street>
+        <HouseNo>12</HouseNo>
+        <PostCode>W52 SZ</PostCode>
+		<City>London</City>
+    </DestinationAddress>
+	<EstimatedTime>30</EstimatedTime>
+    <Name>Jeff</Name>
+    <PhoneNumber>07555451255</PhoneNumber>
+    <Status>NOT COMPLETE</Status>
+    <BookingInfo Type="Regular">
+        <RegularBooking>
+            <ClientID>1</ClientID>
+            <RepeatOn>
+			    <DriverID>2</DriverID>
+                <WeekDay>WEDNESDAY</WeekDay>
+                <WeeklyInterval>1</WeeklyInterval>
+                <PickUpTime>16:05:00</PickUpTime>
+                <PickUpDate>2012-12-12</PickUpDate>
+                <RegStatus>CANCELLED</RegStatus>
+				<TimesComplete>1</TimesComplete>
+            </RepeatOn>
+        </RegularBooking>
+    </BookingInfo>
+</Booking>

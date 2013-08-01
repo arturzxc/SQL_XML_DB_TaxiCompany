@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="Booking">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="OperatorID" type="xs:positiveInteger" maxOccurs="1" minOccurs="1"/>
+                <xs:element name="BookingDate" type="xs:date" maxOccurs="1" minOccurs="1"/>
+
+                <xs:element name="BookingTime" type="xs:time" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="PickUpAddress" maxOccurs="1" minOccurs="1">
+                    <xs:complexType>
+                        <xs:group ref="Address" maxOccurs="1" minOccurs="1"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="DestinationAddress" maxOccurs="1" minOccurs="1">
+                    <xs:complexType>
+                        <xs:group ref="Address" maxOccurs="1" minOccurs="1"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="EstimatedTime" type="xs:positiveInteger"/>
+                <xs:group ref="PassengerInfo" maxOccurs="1" minOccurs="1"/>
+
+                <xs:element name="Status" maxOccurs="1" minOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="COMPLETE"/>
+                            <xs:enumeration value="NOT COMPLETE"/>
+                            <xs:enumeration value="CANCELLED"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+
+                <xs:element name="BookingInfo">
+                    <xs:complexType>
+                        <xs:choice maxOccurs="1" minOccurs="1">
+                            <xs:element name="NormalBooking">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="DriverID" type="xs:positiveInteger"/>
+                                        <xs:element name="ClientID" minOccurs="0" maxOccurs="1"
+                                            type="xs:positiveInteger"/>
+                                        <xs:element name="PickUpDate" type="xs:date" maxOccurs="1"
+                                            minOccurs="1"/>
+                                        <xs:element name="PickUpTime" type="xs:time" maxOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="RegularBooking">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ClientID" type="xs:positiveInteger"
+                                            minOccurs="1" maxOccurs="1"/>
+                                        <xs:element name="RepeatOn" minOccurs="1"
+                                            maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="DriverID"
+                                                  type="xs:positiveInteger"/>
+                                                  <xs:element name="WeekDay" maxOccurs="1"
+                                                  minOccurs="1">
+                                                  <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="MONDAY"/>
+                                                  <xs:enumeration value="TUESDAY"/>
+                                                  <xs:enumeration value="WEDNESDAY"/>
+                                                  <xs:enumeration value="THURSDAY"/>
+                                                  <xs:enumeration value="FRIDAY"/>
+                                                  <xs:enumeration value="SATURDAY"/>
+                                                  <xs:enumeration value="SUNDAY"/>
+                                                  </xs:restriction>
+                                                  </xs:simpleType>
+                                                  </xs:element>
+
+                                                  <xs:element name="WeeklyInterval" maxOccurs="1"
+                                                  minOccurs="1">
+                                                  <xs:simpleType>
+                                                  <xs:restriction base="xs:integer">
+                                                  <xs:pattern value="[0-4]"/>
+                                                  </xs:restriction>
+                                                  </xs:simpleType>
+                                                  </xs:element>
+
+                                                  <xs:element name="PickUpTime" type="xs:time"
+                                                  maxOccurs="1"/>
+                                                  <xs:element name="PickUpDate" type="xs:date"
+                                                  maxOccurs="1" minOccurs="1"/>
+
+                                                  <xs:element name="RegStatus" maxOccurs="1"
+                                                  minOccurs="1">
+                                                  <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="CANCELLED"/>
+                                                  <xs:enumeration value="ONGOING"/>
+                                                  </xs:restriction>
+                                                  </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element name="TimesComplete" minOccurs="1"
+                                                  maxOccurs="1" type="xs:integer"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice>
+                        <xs:attribute name="Type" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:group name="PassengerInfo">
+        <xs:sequence>
+            <xs:element name="Name" maxOccurs="1" minOccurs="1" type="xs:string"/>
+            <xs:element name="PhoneNumber" maxOccurs="1" minOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"
+                        />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="Address">
+        <xs:sequence>
+            <xs:element name="Street" type="xs:string" maxOccurs="1" minOccurs="1"/>
+            <xs:element name="HouseNo" type="xs:string" maxOccurs="1" minOccurs="1"/>
+            <xs:element name="County" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="PostCode" type="xs:string" maxOccurs="1" minOccurs="1"/>
+            <xs:element name="City" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:group>
+</xs:schema>

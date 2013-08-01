@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Booking xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Booking.xsd">
+    <OperatorID>1</OperatorID>
+    <BookingDate>2012-12-13</BookingDate>
+    <BookingTime>20:22:00</BookingTime>
+    <PickUpAddress>
+        <Street>Sleepy Point Street</Street>
+        <HouseNo>43</HouseNo>
+        <PostCode>W36 JH</PostCode>
+		<City>London</City>
+    </PickUpAddress>
+    <DestinationAddress>
+        <Street>Rustic Anchor Street</Street>
+        <HouseNo>41</HouseNo>
+        <PostCode>W1D 2DS</PostCode>
+		<City>London</City>
+    </DestinationAddress>
+	<EstimatedTime>10</EstimatedTime>
+    <Name>Nicky</Name>
+    <PhoneNumber>07555451295</PhoneNumber>
+    <Status>NOT COMPLETE</Status>
+    <BookingInfo Type="Regular">
+        <RegularBooking>
+            <ClientID>7</ClientID>
+            <RepeatOn>
+			    <DriverID>16</DriverID>
+                <WeekDay>MONDAY</WeekDay>
+                <WeeklyInterval>2</WeeklyInterval>
+                <PickUpTime>22:00:00</PickUpTime>
+                <PickUpDate>2012-12-24</PickUpDate>
+                <RegStatus>ONGOING</RegStatus>
+				<TimesComplete>0</TimesComplete>
+            </RepeatOn>
+        </RegularBooking>
+    </BookingInfo>
+</Booking>

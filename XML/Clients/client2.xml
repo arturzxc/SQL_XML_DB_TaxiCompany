@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Client xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Client.xsd">
+    <CompanyName>Big Baboon Web Design</CompanyName>
+    <ClientType>Corporate</ClientType>
+    <Discount>1.5</Discount>
+    <Street>Sunny Run Street</Street>
+    <HouseNo>61</HouseNo>
+    <PostCode>W1K 3EP</PostCode>
+	<City>London</City>
+</Client>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Booking xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Booking.xsd">
+    <OperatorID>2</OperatorID>
+    <BookingDate>2012-12-10</BookingDate>
+    <BookingTime>20:44:00</BookingTime>
+    <PickUpAddress>
+        <Street>Blue Falls Street</Street>
+        <HouseNo>7</HouseNo>
+        <PostCode>W1J 9LE</PostCode>
+		<City>London</City>
+    </PickUpAddress>
+    <DestinationAddress>
+        <Street>Sleepy Point Street</Street>
+        <HouseNo>43</HouseNo>
+        <PostCode>W36 JH</PostCode>
+		<City>London</City>
+    </DestinationAddress>
+	<EstimatedTime>20</EstimatedTime>
+    <Name>Will</Name>
+    <PhoneNumber>07566545127</PhoneNumber>
+    <Status>NOT COMPLETE</Status>
+    <BookingInfo Type="Regular">
+        <RegularBooking>
+            <ClientID>1</ClientID>
+            <RepeatOn>
+			    <DriverID>15</DriverID>
+                <WeekDay>TUESDAY</WeekDay>
+                <WeeklyInterval>2</WeeklyInterval>
+                <PickUpTime>12:30:00</PickUpTime>
+                <PickUpDate>2012-12-11</PickUpDate>
+                <RegStatus>ONGOING</RegStatus>
+				<TimesComplete>1</TimesComplete>
+            </RepeatOn>
+        </RegularBooking>
+    </BookingInfo>
+</Booking>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Expense xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://group17.99k.org/Expenses.xsd">
+    <CostName>Stationary</CostName>
+    <CostValue>30</CostValue>
+    <CostDate>2012-12-11</CostDate>
+    <AdditionalInfo>
+        <ExpenseType>Other</ExpenseType>
+    </AdditionalInfo>
+</Expense>

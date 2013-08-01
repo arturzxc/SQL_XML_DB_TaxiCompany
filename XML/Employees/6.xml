@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://group17.99k.org/Employee.xsd">
+	<firstname>Jonas</firstname>
+	<lastname>Brothers</lastname>
+	<address>
+		<house>66</house>
+		<street>Eten Street</street>
+		<postcode>W1K1AN</postcode>
+		<town>London</town>
+	</address>
+	<phone>07889121495</phone>
+	<ratetype>S</ratetype>
+	<ratevalue>20</ratevalue>
+	<hire>2012-12-10</hire>
+	<shift>3</shift>
+</employee>

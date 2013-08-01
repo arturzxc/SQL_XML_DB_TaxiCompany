@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Client xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Client.xsd">
+    <CompanyName>The Small Tree Engineers</CompanyName>
+    <ClientType>Private</ClientType>
+    <Discount>11</Discount>
+    <Street>Big Vale Street</Street>
+    <HouseNo>12</HouseNo>
+    <PostCode>W52 SZ</PostCode>
+	<City>London</City>
+</Client>

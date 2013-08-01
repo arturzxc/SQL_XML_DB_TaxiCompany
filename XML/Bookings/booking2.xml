@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Booking xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Booking.xsd">
+    <OperatorID>1</OperatorID>
+    <BookingDate>2012-12-10</BookingDate>
+    <BookingTime>13:10:00</BookingTime>
+    <PickUpAddress>
+        <Street>Silver Flower Street</Street>
+        <HouseNo>2</HouseNo>
+        <PostCode>W120TE</PostCode>
+		<City>London</City>
+    </PickUpAddress>
+    <DestinationAddress>
+        <Street>Sunny Bluff Road</Street>
+        <HouseNo>51</HouseNo>
+        <PostCode>W71 DA</PostCode>
+		<City>London</City>
+    </DestinationAddress>
+	<EstimatedTime>60</EstimatedTime>
+    <Name>James</Name>
+    <PhoneNumber>07555431275</PhoneNumber>
+    <Status>NOT COMPLETE</Status>
+    <BookingInfo Type="Normal">
+        <NormalBooking>
+		    <DriverID>2</DriverID>
+			<PickUpDate>2012-12-05</PickUpDate>
+    		<PickUpTime>17:30:00</PickUpTime>
+		</NormalBooking>
+    </BookingInfo>
+</Booking>

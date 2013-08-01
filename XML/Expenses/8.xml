@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Expense xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Expenses.xsd">
+    <CostName>MOT</CostName>
+    <CostValue>130</CostValue>
+    <CostDate>2012-12-14</CostDate>
+    <AdditionalInfo>
+        <CarRegNo>BD51SMR</CarRegNo>
+        <DriverContribution>26</DriverContribution>
+        <ContribReceived>Paid</ContribReceived>
+    </AdditionalInfo>
+</Expense>

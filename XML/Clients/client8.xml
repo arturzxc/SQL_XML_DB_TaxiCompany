@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Client xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Client.xsd">
+    <CompanyName>White Box Builders</CompanyName>
+    <ClientType>Corporate</ClientType>
+    <Discount>2</Discount>
+    <Street>Rustic Anchor Street</Street>
+    <HouseNo>41</HouseNo>
+    <PostCode>W1D 2DS</PostCode>
+	<City>London</City>
+</Client>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://group17.99k.org/Employee.xsd">
+	<firstname>Marly</firstname>
+	<lastname>Hunt</lastname>
+	<address>
+		<house>66</house>
+		<street>Bishop Street</street>
+		<postcode>W1A3WZ</postcode>
+		<town>London</town>
+	</address>
+	<phone>07885358895</phone>
+	<ratetype>F</ratetype>
+	<ratevalue>6</ratevalue>
+	<hire>2012-12-10</hire>
+	<shift>54</shift>
+</employee>

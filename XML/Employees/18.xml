@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://group17.99k.org/Employee.xsd">
+	<firstname>Charles</firstname>
+	<lastname>Huntler</lastname>
+	<address>
+		<house>5</house>
+		<street>Mayhem Road</street>
+		<postcode>W144DJ</postcode>
+		<town>London</town>
+	</address>
+	<phone>07834359895</phone>
+	<ratetype>F</ratetype>
+	<ratevalue>8</ratevalue>
+	<hire>2012-12-10</hire>
+	<shift>28</shift>
+</employee>

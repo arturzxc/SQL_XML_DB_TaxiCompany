@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Expense xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="http://group17.99k.org/Expenses.xsd">
+    <CostName>Screen Wash</CostName>
+    <CostValue>20</CostValue>
+    <CostDate>2012-12-14</CostDate>
+    <AdditionalInfo>
+        <CarRegNo>LO57FRT</CarRegNo>
+        <DriverContribution>4</DriverContribution>
+        <ContribReceived>Outstanding</ContribReceived>
+    </AdditionalInfo>
+</Expense>

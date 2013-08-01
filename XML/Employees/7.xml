@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://group17.99k.org/Employee.xsd">
+	<firstname>Rae</firstname>
+	<lastname>Freda</lastname>
+	<address>
+		<house>44</house>
+		<street>Shenley Road</street>
+		<postcode>W1H1BX</postcode>
+		<town>London</town>
+	</address>
+	<phone>02089721494</phone>
+	<ratetype>S</ratetype>
+	<ratevalue>15</ratevalue>
+	<hire>2012-12-10</hire>
+	<shift>4</shift>
+</employee>
